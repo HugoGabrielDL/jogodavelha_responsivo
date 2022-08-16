@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Jogo da velha</title>
+    <script type="text/javascript" src="jogovelha.js"></script>
+    <link href="estilo.css" rel="stylesheet">
+</head>
+    
+
+<body id="bodytema2">
+
+    <h1 align="center">--- JOGO DA VELHA ---</h1>
+
+    <table width="200" border="4" align="center" bordercolor="black" bgcolor="white">
+        <tbody>
+            <br/><br/>
+            <br/><br/>
+            <tr>
+                <td> <img src="img/transp.png" alt="imagem" id="c1" onclick="return checkjogo(this.id)" width="160" height="160" /></td>
+                <td> <img src="img/transp.png" alt="imagem" id="c2" onclick="return checkjogo(this.id)" width="160" height="160"/></td>
+                <td> <img src="img/transp.png" alt="imagem" id="c3" onclick="return checkjogo(this.id)" width="160" height="160"/></td>
+            </tr>
+                <td><img src="img/transp.png" alt="imagem" id="c4" onclick="return checkjogo(this.id)" width="160" height="160"/></td>
+                <td><img src="img/transp.png" alt="imagem" id="c5" onclick="return checkjogo(this.id)" width="160" height="160"/></td>
+                <td><img src="img/transp.png" alt="imagem" id="c6" onclick="return checkjogo(this.id)" width="160" height="160"/></td>
+            <tr>
+                <td> <img src="img/transp.png" alt="imagem" id="c7" onclick="return checkjogo(this.id)" width="160" height="160"/></td>
+                <td> <img src="img/transp.png" alt="imagem" id="c8" onclick="return checkjogo(this.id)" width="160" height="160"/></td>
+                <td> <img src="img/transp.png" alt="imagem" id="c9" onclick="return checkjogo(this.id)" width="160" height="160"/></td>
+            </tr>
+        </tbody>
+    </table>
+    <br/> <br/>
+    <table border="1" width="400" align="center" bgcolor="white" cellspacing="10" cellpadding="10">
+        <tr align="center">
+                <td><label for=""><b>Contra cpu</b> </label></td>
+                <td> <label> <input type="radio" id="_bot" name="jogo" value="S"> Sim </label> 
+                <label> <input type="radio" id="_bot" name="jogo" value = 'N' checked> Não </label> </td>
+        </tr>
+    </table>
+    <br/>
+    <br/>
+    <br/>
+    <button id="buttonReset" onClick="history.go(0)"> Reiniciar Jogo </button>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <footer class="menu">
+        <br/>
+        <p id="changeTheme2">Alterar tema 👇</p>
+                <a href="tema1.html"><img id="tema1" src="img/pixel_1.png" width="300" height="150"/></a>
+                <img src="img/transp.png" />
+                <a href="index.html"><img id="tema2" src="img/zelda.webp" width="300" height="150" /></a>
+                <img src="img/transp.png" />
+                <a href="tema3.html"><img  id="tema3" src="img/pixel_6.jpg" width="300" height="150"/></a>
+    </footer>
+
+</body>
+
+</html>
